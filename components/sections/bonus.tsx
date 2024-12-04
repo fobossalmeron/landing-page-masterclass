@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Gift } from "lucide-react";
-import Image from "next/image";
+import { Regalo } from "@/components/ui/regalo";
 import { BulletPoint } from "@/components/ui/bullet-point";
 import { SectionContainer } from "@/components/ui/section-container";
 import { LeadModal } from "@/components/modals/lead-modal";
@@ -15,12 +15,12 @@ export function BonusSection() {
     <SectionContainer className="py-16">
       <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
         <div className="space-y-6 mb-8 lg:mb-0">
-          <div className="flex items-center gap-2 text-blue-600">
+          <div className="flex items-center gap-2">
             <Gift className="h-5 w-5" />
-            <span>regalo extra</span>
+            <span className="text-primary bg-primary/10 inline p-3 font-bold">regalo extra</span>
           </div>
           
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold text-secondary">
             diseña productos digitales exitosos,{" "}
             <span className="text-blue-600">gratis</span>
           </h2>
@@ -30,9 +30,9 @@ export function BonusSection() {
           </p>
           
           <ul className="space-y-3">
-            <BulletPoint>Aprende a diseñar productos que los usuarios aman.</BulletPoint>
-            <BulletPoint>Optimiza tu creatividad y enfócate en lo que importa.</BulletPoint>
-            <BulletPoint>Crea productos digitales que dejan huella.</BulletPoint>
+            <BulletPoint><span className="text-primary">Aprende</span> a diseñar productos que los usuarios aman.</BulletPoint>
+            <BulletPoint><span className="text-primary">Optimiza</span> tu creatividad y enfócate en lo que importa.</BulletPoint>
+            <BulletPoint><span className="text-primary">Crea</span> productos digitales que dejan huella.</BulletPoint>
           </ul>
           
           <Button 
@@ -45,21 +45,7 @@ export function BonusSection() {
         </div>
 
         <div className="relative">
-          <div className="relative aspect-square max-w-md mx-auto">
-            <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-              <Image
-                src="https://images.unsplash.com/photo-1586769852044-692d6e3703f0?q=80&w=1974"
-                alt="Design guide preview"
-                fill
-                style={{ objectFit: 'cover' }}
-                priority
-              />
-            </div>
-            <div className="absolute -right-4 -top-4 bg-blue-600 text-white px-4 py-2 rounded-full">
-              Regalo extra
-            </div>
-          </div>
-          <div className="absolute -z-10 top-0 right-0 w-48 h-48 bg-yellow-300 blur-3xl opacity-20" />
+          <Regalo />
         </div>
       </div>
 

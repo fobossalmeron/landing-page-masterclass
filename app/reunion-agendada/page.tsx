@@ -4,23 +4,30 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Footer } from "@/components/sections/footer";
+import Image from "next/image";
 
 export default function SuccessPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         <div className="container max-w-4xl mx-auto px-4 py-8">
-          <div className="text-2xl font-bold mb-12">acueducto</div>
-
+        <div className="flex items-center mb-8">
+            <Image
+              src="/img/logoblack.svg"
+              alt="Acueducto"
+              width={128}
+              height={18}
+            />
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-center max-w-2xl mx-auto mb-12"
           >
-            <h1 className="text-4xl font-bold mb-6">
+            <h1 className="text-4xl font-bold mb-6 text-secondary">
               ¡Felicidades por dar el primer paso para lanzar tu MVP en{" "}
-              <span className="text-blue-600">tiempo récord</span>!
+              <span className="text-primary">tiempo récord</span>!
             </h1>
             
             <div className="space-y-4 text-gray-600 text-lg">

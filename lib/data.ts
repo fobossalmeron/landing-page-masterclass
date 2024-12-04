@@ -2,41 +2,41 @@ export const companies = [
   {
     id: 'borgatta',
     name: 'Borgatta',
-    logo: 'borgatta-logo.svg'
+    logo: 'borgatta.png'
   },
   {
     id: 'nxtp',
     name: 'NXTP',
-    logo: 'nxtp-logo.svg'
+    logo: 'nxtp.png'
   },
   {
     id: 'apli',
     name: 'Apli',
-    logo: 'apli-logo.svg'
+    logo: 'apli.png'
   },
   {
     id: 'deacero',
     name: 'Deacero',
-    logo: 'deacero-logo.svg'
+    logo: 'deacero.png'
   },
   {
     id: '500',
     name: '500 Startups',
-    logo: '500-logo.svg'
+    logo: '500.png'
   },
   {
     id: 'global66',
     name: 'Global66',
-    logo: 'global66-logo.svg'
+    logo: 'global66.png'
   },
   {
     id: 'inter',
     name: 'Inter.mx',
-    logo: 'inter-logo.svg'
+    logo: 'intermx.png'
   },
   {
     id: 'knotion',
     name: 'Knotion',
-    logo: 'knotion-logo.svg'
+    logo: 'knotion.png'
   }
 ] as const;

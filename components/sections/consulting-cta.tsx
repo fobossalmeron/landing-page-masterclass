@@ -18,7 +18,7 @@ export function ConsultingCTA() {
       <Button 
         variant="default"
         size="lg"
-        className="bg-blue-600 hover:bg-blue-700 text-white px-8"
+        onClick={() => window.location.href = '/reunion-agendada'}
       >
         Contáctanos
       </Button>
