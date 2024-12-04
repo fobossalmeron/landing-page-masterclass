@@ -26,7 +26,7 @@ export function LeadModal({ open, onOpenChange }: LeadModalProps) {
             </DrawerTitle>
             <p className="text-gray-600 mt-2">
               <span className="text-blue-600 font-medium">Regalo extra:</span>{" "}
-              Ingresa tus datos para recibir gratis en tu correo la guía "Diseña productos digitales como un pro" con pasos clave para crear productos exitosos.
+              Ingresa tus datos para recibir gratis en tu correo la guía &ldquo;Diseña productos digitales como un pro&rdquo; con pasos clave para crear productos exitosos.
             </p>
           </DrawerHeader>
           <div className="px-4 pb-8">
@@ -50,7 +50,7 @@ export function LeadModal({ open, onOpenChange }: LeadModalProps) {
           <div>
             <p className="text-gray-600 mb-6">
               <span className="text-blue-600 font-medium">Regalo extra:</span>{" "}
-              Ingresa tus datos para recibir gratis en tu correo la guía "Diseña productos digitales como un pro" con pasos clave para crear productos exitosos.
+              Ingresa tus datos para recibir gratis en tu correo la guía &ldquo;Diseña productos digitales como un pro&rdquo; con pasos clave para crear productos exitosos.
             </p>
             <LeadForm />
           </div>

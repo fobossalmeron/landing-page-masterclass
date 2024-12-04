@@ -16,7 +16,7 @@ export function HeroSection() {
       <nav className="flex items-center justify-between mb-12">
         <div className="text-2xl font-bold">acueducto</div>
         <Button 
-          variant="primary" 
+          variant="default" 
           className="bg-blue-600 hover:bg-blue-700 text-white"
           onClick={() => setIsModalOpen(true)}
         >
@@ -42,7 +42,7 @@ export function HeroSection() {
               <BulletPoint>Consigue feedback en horas.</BulletPoint>
             </ul>
             <Button 
-              variant="primary" 
+              variant="default" 
               className="bg-blue-600 hover:bg-blue-700 text-white mt-4"
               onClick={() => setIsModalOpen(true)}
             >

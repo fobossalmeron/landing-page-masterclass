@@ -16,7 +16,7 @@ export function ConsultingCTA() {
       </h2>
       <p className="text-xl mb-8">Agenda una llamada</p>
       <Button 
-        variant="primary"
+        variant="default"
         size="lg"
         className="bg-blue-600 hover:bg-blue-700 text-white px-8"
       >
