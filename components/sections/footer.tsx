@@ -9,7 +9,7 @@ export function Footer() {
             © 2024 Acueducto. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-white hover:text-gray-200">
+            <a href="https://acueducto.studio/privacidad" className="text-sm text-white hover:text-gray-200">
               Política de privacidad
             </a>
             <a href="#" className="text-sm text-white hover:text-gray-200">

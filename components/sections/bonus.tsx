@@ -14,25 +14,25 @@ export function BonusSection() {
   return (
     <SectionContainer className="py-16">
       <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
-        <div className="space-y-6 mb-8 lg:mb-0">
-          <div className="flex items-center gap-2">
+        <div className="space-y-6 mb-8 lg:mb-0 max-w-[460px]">
+          <div className="flex items-center gap-2 bg-primary/10 p-3 max-w-fit text-primary">
             <Gift className="h-5 w-5" />
-            <span className="text-primary bg-primary/10 inline p-3 font-bold">regalo extra</span>
+            <span className="inline font-bold">regalo extra</span>
           </div>
           
-          <h2 className="text-4xl font-bold text-secondary">
+          <h2 className="text-5xl leading-[125%] font-bold text-secondary">
             diseña productos digitales exitosos,{" "}
             <span className="text-blue-600">gratis</span>
           </h2>
           
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-lg">
             Te regalamos una guía esencial que incluye todo lo que necesitas para diseñar productos que venden.
           </p>
           
-          <ul className="space-y-3">
-            <BulletPoint><span className="text-primary">Aprende</span> a diseñar productos que los usuarios aman.</BulletPoint>
-            <BulletPoint><span className="text-primary">Optimiza</span> tu creatividad y enfócate en lo que importa.</BulletPoint>
-            <BulletPoint><span className="text-primary">Crea</span> productos digitales que dejan huella.</BulletPoint>
+          <ul className="space-y-3 text-lg">
+            <BulletPoint><span className="text-primary font-medium mr-1 inline">Aprende</span> a diseñar productos que los usuarios aman.</BulletPoint>
+            <BulletPoint><span className="text-primary font-medium mr-1 inline">Optimiza</span> tu creatividad y enfócate en lo que importa.</BulletPoint>
+            <BulletPoint><span className="text-primary font-medium mr-1 inline">Crea</span> productos digitales que dejan huella.</BulletPoint>
           </ul>
           
           <Button 

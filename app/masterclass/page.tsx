@@ -1,42 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import Image from "next/image";
 import { VideoPlayer } from "@/components/video/player";
 import { ConsultingCTA } from "@/components/sections/consulting-cta";
 import { Footer } from "@/components/sections/footer";
 import { TopicsGuide } from "@/components/sections/topics-guide";
-import { ExitIntentModal } from "@/components/modals/exit-intent-modal";
 
 export default function MasterClassPage() {
   const [showCTA, setShowCTA] = useState(false);
-  const [showExitModal, setShowExitModal] = useState(false);
-  const hasShownModal = useRef(false);
-
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.hidden && !hasShownModal.current) {
-        setShowExitModal(true);
-        hasShownModal.current = true;
-      }
-    };
-
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !hasShownModal.current) {
-        setShowExitModal(true);
-        hasShownModal.current = true;
-      }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-    document.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-      document.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, []);
 
   return (
     <main className="min-h-screen">
@@ -49,7 +21,7 @@ export default function MasterClassPage() {
               width={128}
               height={18}
             />
-          </div>{" "}
+          </div>
           <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-secondary">
             construye tu MVP en 3 horas:
             <br />
@@ -62,7 +34,7 @@ export default function MasterClassPage() {
         </div>
 
         <VideoPlayer
-          onTimeUpdate={(time) => {
+          onTimeUpdate={(time) => { 
             if (time >= 5) {
               setShowCTA(true);
             }
@@ -79,8 +51,6 @@ export default function MasterClassPage() {
       </div>
 
       <Footer />
-
-      <ExitIntentModal open={showExitModal} onOpenChange={setShowExitModal} />
     </main>
   );
 }

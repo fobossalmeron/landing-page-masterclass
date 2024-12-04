@@ -1,34 +1,29 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-import { Play } from "lucide-react";
-
+import React from "react";
+import ReactPlayer from 'react-player/youtube'
 interface VideoPlayerProps {
   onTimeUpdate?: (currentTime: number) => void;
 }
 
 export function VideoPlayer({ onTimeUpdate }: VideoPlayerProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const handleTimeUpdate = () => {
-    if (videoRef.current && onTimeUpdate) {
-      onTimeUpdate(videoRef.current.currentTime);
+  const handleProgress = (state: { playedSeconds: number }) => {
+    if (onTimeUpdate) {
+      onTimeUpdate(state.playedSeconds);
     }
   };
 
   return (
-    <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden" ref={containerRef}>
-      <video
-        ref={videoRef}
-        className="w-full h-full"
+    <div>
+    <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=zu-PoQ94a_Q" 
         controls
-        onTimeUpdate={handleTimeUpdate}
-        poster="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070"
-      >
-        <source src="/record.mp4" type="video/mp4" />
-        Tu navegador no soporta el elemento de video.
-      </video>
+        width="100%"
+        height="100%"
+        onProgress={handleProgress}
+      />
+    </div>
     </div>
   );
 }

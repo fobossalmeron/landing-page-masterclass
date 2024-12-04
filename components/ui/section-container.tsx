@@ -6,7 +6,7 @@ export function SectionContainer({
   className?: string;
 }) {
   return (
-    <section className={`container mx-auto px-4 ${className}`}>
+    <section className={`container mx-auto px-4 lg:px-10 ${className}`}>
       {children}
     </section>
   );
