@@ -4,16 +4,16 @@ import { companies } from "@/lib/data";
 
 export function CompaniesSection() {
   return (
-    <SectionContainer className="py-16 lg:py-24">
-      <h2 className="text-center text-xl lg:text-2xl max-w-3xl mx-auto mb-12 text-secondary font-bold">
+    <SectionContainer className="py-16 lg:py-24 mt-14">
+      <h2 className="text-center text-xl lg:text-3xl mx-auto mb-16 text-secondary font-bold max-w-[680px] !leading-normal">
         las mejores empresas de Latinoamérica han confiado en nosotros y en nuestra compañía para el diseño y desarrollo de software
       </h2>
       
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+      <div className="flex flex-wrap items-center justify-center gap-12 gap-y-16 max-w-[940px] mx-auto">
         {companies.map((company) => (
           <div 
             key={company.id} 
-            className="h-12 flex items-center"
+            className="h-12 flex items-center justify-center"
             role="img"
             aria-label={`Logo de ${company.name}`}
           >
