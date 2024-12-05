@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -9,19 +7,24 @@ export function ConsultingCTA() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="text-center py-16"
+      className="rounded-lg bg-white px-7 py-7 text-center"
     >
-      <h2 className="text-2xl font-bold mb-4">
-        ¿Necesitas ayuda para construir tu MVP?
-      </h2>
-      <p className="text-xl mb-8">Agenda una llamada</p>
-      <Button 
-        variant="default"
-        size="lg"
-        onClick={() => window.location.href = '/reunion-agendada'}
-      >
-        Contáctanos
-      </Button>
+      <h2 className="mb-2 text-2xl font-bold">¿Necesitas ayuda para construir tu MVP?</h2>
+      <p className="mb-5 text-xl">Agenda una llamada con nosotros</p>
+      <div className="flex justify-center gap-4">
+        <a
+          href="https://calendly.com/acueducto/discovery-con-acueducto"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="default" size="lg">
+            ¡Hablemos!
+          </Button>
+        </a>
+        <Button variant="outline" size="lg">
+          Continuar video
+        </Button>
+      </div>
     </motion.div>
   );
 }

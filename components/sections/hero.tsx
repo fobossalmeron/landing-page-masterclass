@@ -8,20 +8,17 @@ import { LeadModal } from "@/components/modals/lead-modal";
 import { useState } from "react";
 import { Skewed } from "@/components/ui/skewed";
 import { PlayButton } from "@/components/ui/play-button";
+import { Nav } from "@/components/ui/nav";
 
 export function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <SectionContainer className="pt-8 lg:pt-16">
-      <nav className="mb-16 flex w-full items-center justify-between">
-        <div className="flex items-center">
-          <Image src="/img/logoblack.svg" alt="Acueducto" width={128} height={18} />
-        </div>
-        <Button variant="default" onClick={() => setIsModalOpen(true)}>
-          Ver clase gratuita
-        </Button>
-      </nav>
+      <Nav 
+        showButton 
+        onButtonClick={() => setIsModalOpen(true)} 
+      />
 
       <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="space-y-4">

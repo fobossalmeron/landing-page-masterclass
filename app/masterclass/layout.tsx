@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { verifyToken } from "@/lib/auth";
 
@@ -10,11 +10,20 @@ export default function MasterClassLayout({
   children: React.ReactNode;
 }) {
   const router = useRouter();
+  const [isAuthorized, setIsAuthorized] = useState<boolean | null>(null);
 
   useEffect(() => {
     const checkAuth = async () => {
-      const isValid = await verifyToken();
-      if (!isValid) {
+      try {
+        const isValid = await verifyToken();
+        setIsAuthorized(isValid);
+        
+        if (!isValid) {
+          router.push('/');
+        }
+      } catch (error) {
+        console.error('Error verificando autenticación:', error);
+        setIsAuthorized(false);
         router.push('/');
       }
     };
@@ -22,5 +31,11 @@ export default function MasterClassLayout({
     checkAuth();
   }, [router]);
 
-  return <>{children}</>;
+  // Mostrar nada mientras verificamos la autenticación
+  if (isAuthorized === null) {
+    return null;
+  }
+
+  // Solo renderizar los children si está autorizado
+  return isAuthorized ? children : null;
 }
