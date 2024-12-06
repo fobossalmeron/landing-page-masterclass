@@ -5,7 +5,7 @@ import { Nav } from "@/components/ui/nav";
 
 export default function MasterClassPage() {
   return (
-    <main className="min-h-screen">
+    <>
       <SectionContainer className="pt-8 lg:pt-16">
         <Nav />
         <div className="mb-8">
@@ -21,6 +21,6 @@ export default function MasterClassPage() {
         <VideoPlayer />
       </SectionContainer>
       <Footer />
-    </main>
+    </>
   );
 }

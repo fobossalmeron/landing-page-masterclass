@@ -34,7 +34,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={miFont.className}>{children}</body>
+      <body className={miFont.className}>
+        <main className="min-h-screen">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
