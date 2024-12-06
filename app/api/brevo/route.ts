@@ -60,6 +60,11 @@ async function handleCreateContact(data: any) {
 
 async function handleSendEmail(data: any) {
   const { email, name } = data;
+  // Capitalize each word in name
+  const capitalizedName = name
+    .split(' ')
+    .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
 
   const response = await fetch('https://api.brevo.com/v3/smtp/email', {
     method: 'POST',
@@ -79,9 +84,9 @@ async function handleSendEmail(data: any) {
       }],
       subject: '¡Bienvenido a la masterclass!',
       htmlContent: `
-        <h1>¡Hola ${name}!</h1>
+        <h1>¡Hola ${capitalizedName}!</h1>
         <p>Gracias por registrarte en nuestra masterclass gratuita.</p>
-        <p>Aquí tienes tu guía gratuita: <a href="https://acueducto.studio/guia-mvp.pdf">Descargar guía</a></p>
+        <p>Aquí tienes el ebook <a href="https://acueducto.notion.site/Design-digital-products-like-a-pro-5e11e26cd0174ce98d21307592a562dd"><b>Design digital products like a pro</b></a></p>
       `,
     }),
   });

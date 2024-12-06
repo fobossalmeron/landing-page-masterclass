@@ -110,7 +110,7 @@ export function LeadForm() {
         </div>
       </div>
 
-      <div className="flex items-start gap-2 text-sm text-gray-600">
+      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-100/90 p-4 rounded-lg">
         <Check className="h-5 w-5 text-blue-600 shrink-0" />
         <p>Prometemos no enviar spam. Solo contenido de valor para impulsar tus proyectos.</p>
       </div>
