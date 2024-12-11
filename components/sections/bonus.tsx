@@ -21,26 +21,26 @@ export function BonusSection() {
               <span className="inline font-bold">regalo extra</span>
             </Skewed>
 
-          <h2 className="text-5xl leading-[125%] font-bold text-secondary">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl leading-[125%] font-bold text-secondary">
             diseña productos digitales exitosos, <span className="text-blue-600">gratis</span>
           </h2>
 
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-base md:text-lg">
             Te regalamos una guía esencial que incluye todo lo que necesitas para diseñar productos
             que venden.
           </p>
 
-          <ul className="space-y-3 text-lg max-w-[410px]">
+          <ul className="space-y-3 text-base md:text-lg max-w-[410px]">
             <BulletPoint>
-              <span className="text-primary font-medium">Aprende</span> a diseñar productos que los
+              <span className="text-primary font-bold">Aprende</span> a diseñar productos que los
               usuarios amen.
             </BulletPoint>
             <BulletPoint>
-              <span className="text-primary font-medium">Optimiza</span> tu creatividad y enfócate
+              <span className="text-primary font-bold">Optimiza</span> tu creatividad y enfócate
               en lo que importa.
             </BulletPoint>
             <BulletPoint>
-              <span className="text-primary font-medium">Crea</span> productos digitales que dejan
+              <span className="text-primary font-bold">Crea</span> productos digitales que dejan
               huella.
             </BulletPoint>
           </ul>

@@ -1,9 +1,8 @@
 import { SectionContainer } from "@/components/ui/section-container";
-import { cn } from "@/lib/utils";
 
-export function Footer({ marginTop = true }: { marginTop?: boolean }) {
+export function Footer() {
   return (
-    <footer className={cn("bg-secondary z-10 relative", marginTop ? "mt-16" : "")}>
+    <footer className="bg-secondary z-10 relative">
       <SectionContainer className="py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400">

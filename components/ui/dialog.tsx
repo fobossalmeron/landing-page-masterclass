@@ -43,6 +43,9 @@ const DialogContent = React.forwardRef<
       )}
       {...props}
     >
+      <DialogPrimitive.Description className="sr-only">
+        Formulario para ver la masterclass
+      </DialogPrimitive.Description>
       {children}
       <DialogPrimitive.Close className="absolute bg-gray-100/90 p-3 right-4 top-4 rounded-full opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
         <X className="h-4 w-4" />
@@ -88,7 +91,7 @@ const DialogTitle = React.forwardRef<
   <DialogPrimitive.Title
     ref={ref}
     className={cn(
-      'text-lg font-semibold leading-none',
+      'text-lg font-bold leading-none',
       className
     )}
     {...props}

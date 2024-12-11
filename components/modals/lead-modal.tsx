@@ -23,15 +23,15 @@ export function LeadModal({ open, onOpenChange }: LeadModalProps) {
   if (isMobile) {
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
-        <DrawerContent>
+        <DrawerContent aria-describedby="drawer-description">
           <DrawerHeader className="text-center">
             <DrawerTitle className="text-2xl font-bold tracking-normal text-secondary">
-              accede a nuestra máster class <span className="text-primary">gratuita</span>
+              accede a nuestra masterclass <span className="text-primary">gratuita</span>
             </DrawerTitle>
-            <p className="mt-2 text-gray-600">
-              <span className="font-medium text-primary">Regalo extra:</span> Ingresa tus datos para
-              recibir gratis en tu correo la guía &ldquo;Diseña productos digitales como un
-              pro&rdquo; con pasos clave para crear productos exitosos.
+            <p className="mt-2 text-gray-600 text-sm" id="drawer-description">
+              <span className="font-bold text-primary">Regalo extra:</span> Ingresa tus datos para
+              recibir gratis en tu correo la guía <b className="text-secondary font-bold">&ldquo;Design digital products like a pro&rdquo; </b>
+              con pasos clave para crear productos exitosos.
             </p>
           </DrawerHeader>
           <div className="px-4 pb-8">
@@ -44,14 +44,14 @@ export function LeadModal({ open, onOpenChange }: LeadModalProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[700px]">
+      <DialogContent className="sm:max-w-[700px]" aria-describedby="dialog-description">
         <DialogHeader>
           <DialogTitle className="text-center text-4xl font-bold text-secondary max-w-[400px] self-center mb-5">
             accede a nuestra masterclass <span className="text-primary">gratuita</span>
           </DialogTitle>
-          <DialogDescription className="mb-6 text-center text-lg text-gray-600 max-w-[600px] self-center">
+          <DialogDescription id="dialog-description" className="mb-6 text-center text-lg text-gray-600 max-w-[600px] self-center">
             <span className="font-bold text-primary">Regalo extra:</span> Ingresa tus datos para
-            recibir gratis en tu correo la guía <b className="text-secondary">&ldquo;Design digital products like a pro&rdquo; </b>
+            recibir gratis en tu correo la guía <b className="text-secondary font-bold">&ldquo;Design digital products like a pro&rdquo; </b>
             con pasos clave para crear productos exitosos.
           </DialogDescription>
         </DialogHeader>

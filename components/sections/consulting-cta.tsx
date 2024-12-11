@@ -13,7 +13,7 @@ export function ConsultingCTA() {
         <p className="mb-5 text-xl">Agenda una llamada con nosotros</p>
         <div className="flex justify-center gap-4">
           <a
-            href="https://calendly.com/acueducto/discovery-con-acueducto"
+            href="https://calendly.com/acueducto/mvp"
             target="_blank"
             rel="noopener noreferrer"
           >

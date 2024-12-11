@@ -25,14 +25,14 @@ export const companies = [
     logo: '500.png'
   },
   {
-    id: 'global66',
-    name: 'Global66',
-    logo: 'global66.png'
-  },
-  {
     id: 'inter',
     name: 'Inter.mx',
     logo: 'intermx.png'
+  },
+  {
+    id: 'global66',
+    name: 'Global66',
+    logo: 'global66.png'
   },
   {
     id: 'knotion',

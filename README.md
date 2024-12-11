@@ -1,0 +1,5 @@
+- Mobile 
+- Cambiar el tiempo a 15 min para el CTA agresivo
+- Rediseñar el correo
+- Poner el video real
+- Si jala el drawer?

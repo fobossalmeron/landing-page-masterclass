@@ -71,8 +71,8 @@ export function LeadForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-6">
+      <div className="space-y-2 sm:space-y-4">
         <div className="space-y-2">
           <Label htmlFor="name">Nombre</Label>
           <Input
@@ -110,7 +110,7 @@ export function LeadForm() {
         </div>
       </div>
 
-      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-100/90 p-4 rounded-lg">
+      <div className="flex items-start gap-2 text-xs text-gray-600 bg-gray-100/90 p-2 sm:p-4 rounded-lg">
         <Check className="h-5 w-5 text-blue-600 shrink-0" />
         <p>Prometemos no enviar spam. Solo contenido de valor para impulsar tus proyectos.</p>
       </div>

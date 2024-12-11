@@ -6,15 +6,14 @@ import { Nav } from "@/components/ui/nav";
 export default function MasterClassPage() {
   return (
     <>
-      <SectionContainer className="pt-8 lg:pt-16">
+      <SectionContainer className="pt-8 lg:pt-16 min-h-svh">
         <Nav />
         <div className="mb-8">
-          <h1 className="mb-4 text-3xl font-bold text-secondary lg:text-3xl">
+          <h1 className="mb-2 sm:mb-4 text-2xl sm:text-3xl font-bold text-secondary lg:text-3xl max-w-[470px]">
             construye tu MVP en 3 horas:
-            <br />
-            <span className="text-primary">web-app full stack</span>
+            <span className="text-primary"> web-app full stack</span>
           </h1>
-          <p className="max-w-sm text-lg text-gray-600">
+          <p className="text-base max-w-sm sm:text-lg text-gray-600">
             Mira el tutorial completo y descubre cómo lanzar un MVP en tiempo récord.
           </p>
         </div>

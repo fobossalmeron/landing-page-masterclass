@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local'
 
-const miFont = localFont({
+const acueductoFont = localFont({
   src: [
     {
       path: '../public/fonts/300.woff2',
@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={miFont.className}>
+      <body className={acueductoFont.className}>
         <main className="min-h-screen">
           {children}
         </main>
