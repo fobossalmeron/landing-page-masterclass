@@ -29,8 +29,8 @@ export function HeroSection() {
           </h1>
         </div>
 
-        <div className="ml-auto lg:mt-44 flex max-w-[500px] flex-col justify-end space-y-6">
-          <h2 className="text-xl lg:text-3xl font-bold text-secondary">
+        <div className="ml-auto lg:mt-44 flex max-w-[340px] md:max-w-[400px] lg:max-w-[500px] flex-col justify-end space-y-6">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-secondary">
             De 0 a 1 con IA: obtén resultados en tiempo récord
           </h2>
           <ul className="space-y-3 text-base md:text-lg">

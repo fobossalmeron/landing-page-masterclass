@@ -5,14 +5,14 @@ export function Footer() {
     <footer className="bg-secondary z-10 relative">
       <SectionContainer className="py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
+          <p className="text-center sm:text-left text-sm text-gray-400">
             © 2024 Acueducto. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
-            <a href="https://acueducto.studio" className="text-sm text-white hover:text-gray-200">
+            <a href="https://acueducto.studio" className="text-sm text-gray-200 hover:text-white transition-colors">
               acueducto.studio
             </a>
-            <a href="https://acueducto.studio/privacidad" className="text-sm text-white hover:text-gray-200">
+            <a href="https://acueducto.studio/privacidad" className="text-sm text-gray-200 hover:text-white transition-colors">
               política de privacidad
             </a>
           </div>

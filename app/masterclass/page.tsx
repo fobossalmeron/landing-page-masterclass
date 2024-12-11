@@ -6,7 +6,7 @@ import { Nav } from "@/components/ui/nav";
 export default function MasterClassPage() {
   return (
     <>
-      <SectionContainer className="pt-8 lg:pt-16 min-h-svh">
+      <SectionContainer className="pt-8 lg:pt-16 min-h-[90svh]">
         <Nav />
         <div className="mb-8">
           <h1 className="mb-2 sm:mb-4 text-2xl sm:text-3xl font-bold text-secondary lg:text-3xl max-w-[470px]">

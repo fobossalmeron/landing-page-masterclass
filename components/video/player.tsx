@@ -76,7 +76,7 @@ export function VideoPlayer() {
       </div>
       {showButton && (
         <motion.div
-          className="flex justify-center mt-10"
+          className="flex justify-center mt-10 mb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
