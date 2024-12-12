@@ -62,11 +62,11 @@ export function HeroSection() {
                 src="/img/video_background.jpg"
                 alt="Masterclass"
                 fill
-                style={{ objectFit: "cover" }}
+                className="object-cover"
                 priority
               />
             </div>
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20">
               <PlayButton onClick={() => setIsModalOpen(true)} />
             </div>
           </div>

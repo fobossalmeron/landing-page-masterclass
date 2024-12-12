@@ -40,7 +40,7 @@ export function VideoPlayer() {
     <div>
       <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-900">
         <ReactPlayer
-          url="https://youtu.be/53ClHJyf5Bc"
+          url="https://youtu.be/9ZcK1IBdUss"
           controls
           width="100%"
           height="100%"
