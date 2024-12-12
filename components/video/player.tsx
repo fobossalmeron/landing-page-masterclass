@@ -38,7 +38,7 @@ export function VideoPlayer() {
 
   return (
     <div>
-      <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-900">
+      <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-900 mb-10">
         <ReactPlayer
           url="https://youtu.be/9ZcK1IBdUss"
           controls
@@ -76,7 +76,7 @@ export function VideoPlayer() {
       </div>
       {showButton && (
         <motion.div
-          className="flex justify-center mt-10 mb-12"
+          className="flex justify-center mb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}

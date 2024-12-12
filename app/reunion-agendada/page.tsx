@@ -54,7 +54,7 @@ export default function SuccessPage() {
           />
         </div>
       </div>
-      <Footer />
+      <Footer marginTop={false}/>
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={acueductoFont.className}>
-        <main className="min-h-svh">
+        <main className="min-h-svh flex flex-col">
           {children}
         </main>
       </body>
